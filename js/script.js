@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    var url=window.location.host;
+    var myurl="www.52xyi.cn";
+    if (url!=myurl) {
+        $(".record").addClass("hidden");
+    }else{
+       $(".record").removeClass("hidden"); 
+    }
     new Vidage('#VidageVideo');
     var delay = 1;
     var DELAY_STEP = 200;
@@ -42,11 +49,11 @@ $(document).ready(function () {
     $(document.body).on('keydown', function (event) {
         // Press 'b' key
         if (event.which === 88) {
-            $('.go-location').text("Going to Enzo Chen's blog");
+            $('.go-location').text("Going to XiaoYi's blog");
             $('.go').css('opacity', 1);
 
             window.setTimeout(function () {
-                window.location.href = 'http://blog.i90s.vip';
+                window.location.href = 'http://blog.domeyi.com';
             }, 1000);
         }
     });
