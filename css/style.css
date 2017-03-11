@@ -94,6 +94,7 @@ ul, ol {
     margin-top: 40px;
     text-align: center;
     font-size: 14px;
+    position: relative;
 }
 
 .menu a {
@@ -152,7 +153,7 @@ ul, ol {
 }
 .record a:hover{
     border-bottom: 1px dashed #000;
-    color: #fff;
+    color: #fff;ß
 }
 .go {
     opacity: 0;
@@ -168,7 +169,18 @@ ul, ol {
     margin-left: 400px;
 }
 
+#weixin{
+    display: none;
+    background-image:url(../img/2.jpg);
+    background-size: 100%;
+    position: absolute;
+    left: 350px;
+    width: 151px;
+    height: 151px;
+    z-index:5555; 
+    bottom: 40px;
 
+}
 .animate-init {
     position: relative;
     top: -10px;

@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    var url=window.location.host;
+    var myurl="www.52xyi.cn";
+    if (url!=myurl) {
+        $(".record").addClass("hidden");
+    }else{
+       $(".record").removeClass("hidden"); 
+    }
     new Vidage('#VidageVideo');
     var delay = 1;
     var DELAY_STEP = 200;
@@ -38,7 +45,11 @@ $(document).ready(function () {
             color: '#FFF'
         });
     });
-
+    $(".weixin").hover(function(){
+        $("#weixin").css("display","block");
+    },function(){
+        $("#weixin").css("display","none");
+    })
     $(document.body).on('keydown', function (event) {
         // Press 'b' key
         if (event.which === 88) {
